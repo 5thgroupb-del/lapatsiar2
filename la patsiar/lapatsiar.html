@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LA PATSIAR | קפה ופטיסרי צרפתי</title>
+<meta name="description" content="LA PATSIAR – קפה ופטיסרי בהשראה צרפתית. אתר דמו עם תוכן זמני.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Heebo:wght@300;400;500&display=swap">
+<style>
+:root{--ink:#24231F;--bg:#F4EFE6;--gold:#A58B68;--terra:#7A4939;--sand:#D9CFC0;--olive:#343D32;--card:#FBF8F2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--fs:100%}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#F4EFE6;--bg:#1d1c19;--card:#262520;--sand:#3a382f;--terra:#d9a58f}}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);font-size:var(--fs);scroll-behavior:smooth;height:100%}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.8 Heebo,Assistant,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Heebo,serif;font-weight:500;line-height:1.2;letter-spacing:-.01em;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,6vw,4.6rem)}h2{font-size:clamp(1.9rem,4vw,3rem)}h3{font-size:1.4rem}
+a{color:inherit}.wrap{max-width:1200px;margin:auto;padding:0 24px}section{padding:clamp(64px,9vw,128px) 0}
+.label{letter-spacing:.22em;font-size:.75rem;color:var(--terra);text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:18px;font-weight:500}.label:before{content:"";width:32px;height:1px;background:var(--gold)}.intro .label{justify-content:center}.intro .label:after{content:"";width:32px;height:1px;background:var(--gold)}
+.btn{display:inline-block;padding:13px 28px;border:1px solid var(--ink);background:none;color:inherit;font:inherit;text-decoration:none;cursor:pointer;min-height:44px;transition:.25s}
+.btn:hover{background:var(--ink);color:var(--bg)}.btn.fill{background:#7A4939;border-color:#7A4939;color:#fff}.btn.fill:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}body.hc .btn.fill{background:#ff0;border-color:#ff0;color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+body.hf *:focus-visible{outline:4px solid #ff0;outline-offset:3px}body.ul a{text-decoration:underline}body.gs{filter:grayscale(1)}
+body.hc{--bg:#000;--ink:#fff;--card:#000;--sand:#fff;--terra:#ff0;--gold:#ff0}
+/* nav */
+header{position:fixed;top:0;inset-inline:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:.3s;color:#fff}
+header.solid{background:color-mix(in srgb,var(--bg) 94%,transparent);color:var(--ink);border-bottom:1px solid var(--sand);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.6rem;letter-spacing:.14em;text-decoration:none;font-weight:600}
+.links{display:flex;gap:26px;align-items:center}.links a{text-decoration:none;padding:4px 0;border-bottom:1px solid transparent}.links a[aria-current=page]{border-color:var(--gold)}
+#mc{display:none}.burger{display:none;background:none;border:0;color:inherit;font-size:1.7rem;min-width:44px;min-height:44px;cursor:pointer}
+@media(max-width:980px){#mc{display:inline-block;text-align:center;font-size:1rem}.burger{display:block}.links{position:fixed;inset:72px 0 0;background:var(--bg);color:var(--ink);flex-direction:column;justify-content:center;gap:28px;font-size:1.4rem;transform:translateY(-120%);transition:transform .35s;visibility:hidden}.links.open{transform:none;visibility:visible}.nav .btn.cta{display:none}}
+/* hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:560px;color:#fff;display:flex;align-items:center;padding:0;overflow:hidden}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s}.slide.on{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:rgba(36,35,31,.55)}
+.hero .wrap{position:relative;z-index:2}.hero p{max-width:520px;font-size:1.2rem}.hero .btn{border-color:#fff;margin:6px 0 0 10px}.hero .btn:hover{background:#fff;color:var(--ink)}
+.ph{position:relative;width:100%;height:100%;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);overflow:hidden;background:var(--a)}.ph:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--x,50%) 22%,rgba(255,255,255,.22),transparent 48%),linear-gradient(to top,rgba(0,0,0,.4),transparent 55%),linear-gradient(135deg,var(--a),var(--b));transition:transform .9s cubic-bezier(.2,.7,.2,1)}.ph:after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.22);pointer-events:none}.ph span{position:relative;z-index:1}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* intro */
+.intro{text-align:center;max-width:720px;margin:auto}.intro h2{font-size:clamp(2.2rem,5vw,3.8rem)}.intro p{font-size:1.15rem;opacity:.85}.fr{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.6rem;color:var(--terra);display:block;margin-top:-4px}.rule{width:80px;height:1px;background:var(--gold);margin:32px auto;position:relative}.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.hero .btn.fill{background:#7A4939;border-color:#7A4939;color:#fff}.hero .btn.fill:hover{background:#fff;color:var(--ink);border-color:#fff}.hero h1{max-width:760px;margin-bottom:.35em}.hero .wrap{padding-top:72px}.hero .btn{margin:10px 0 0 12px}
+.dots{position:absolute;bottom:calc(24px + env(safe-area-inset-bottom,0px));inset-inline-start:24px;z-index:3;display:flex;gap:6px}.dots button{width:36px;height:44px;background:none;border:0;cursor:pointer;position:relative}.dots button:before{content:"";position:absolute;inset:21px 0;background:rgba(255,255,255,.4);transition:.4s}.dots .on:before{background:#fff;inset:20px 0 20px}
+main>*{animation:fin .7s both}@keyframes fin{from{opacity:0;transform:translateY(10px)}}
+.card{transition:.35s}.card:hover{border-color:var(--gold);transform:translateY(-4px)}.card:hover .ph:before,.bento>*:hover .ph:before{transform:scale(1.06)}.card .b{border-top:1px solid var(--sand);padding:20px}.card .b h3{margin-bottom:.25em}.card .b p{font-size:.95rem;opacity:.8;margin:0 0 12px}.price{letter-spacing:.04em}
+#q{flex:0 0 170px}.chip{transition:.25s}.chip:hover{border-color:var(--gold)}#ap button{background:none;border:1px solid var(--sand);color:inherit;font:inherit;text-align:start}#ap button:hover{border-color:var(--gold)}
+.dark input:not([type=checkbox]),.dark textarea{border-color:rgba(244,239,230,.35);background:rgba(244,239,230,.07);color:#F4EFE6}.dark .btn:hover{background:#F4EFE6;color:var(--olive)}.dark h2{font-size:clamp(2rem,4.5vw,3.4rem)}
+footer .logo{margin-bottom:14px;display:block}footer .wrap>div>a{padding:5px 0}footer .hours td{border-color:rgba(244,239,230,.15)}
+/* bento */
+/* carousel */
+.car{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:8px;cursor:grab}
+.car::-webkit-scrollbar{display:none}.car .card{flex:0 0 78%;scroll-snap-align:start}
+@media(min-width:768px){.car .card{flex-basis:44%}}@media(min-width:1200px){.car .card{flex-basis:31%}}
+.card{background:var(--card);border:1px solid var(--sand)}.card .ph{height:300px;aspect-ratio:auto}.card .b{padding:18px}.price{color:var(--terra);font-weight:500}
+.ctl{display:flex;gap:10px;margin-bottom:20px;align-items:center;justify-content:space-between}
+.ctl button{width:44px;height:44px;border:1px solid var(--ink);background:none;color:inherit;cursor:pointer;font-size:1.2rem}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(130px,17vw,210px);gap:14px}
+.bento>*{overflow:hidden;position:relative;border:0;padding:0;cursor:pointer;background:none;transition:opacity .6s}
+.bento .t1{grid-column:span 2;grid-row:span 2}.bento .t2{grid-row:span 2}.bento .t3{grid-column:span 2}
+.bento .fade{opacity:0}.bento .ph{transition:transform .6s}.bento>*:hover .ph{transform:scale(1.04)}
+@media(max-width:700px){.bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.split .img{height:520px}
+@media(max-width:800px){.split{grid-template-columns:1fr;gap:28px}.split .img{height:380px}}
+.team{height:420px;margin-bottom:36px}.dark{background:var(--olive);color:#F4EFE6}
+.hours{width:100%;border-collapse:collapse}.hours td{padding:9px 0;border-bottom:1px solid var(--sand)}.hours tr.today{color:var(--terra);font-weight:500}
+.demo{font-size:.8rem;color:var(--ink);background:var(--sand);padding:2px 8px;display:inline-block;margin-bottom:8px}
+/* menu */
+.page{padding-top:72px}.cover{height:clamp(320px,46vh,480px);position:relative;color:#fff;display:flex;align-items:flex-end;padding-bottom:clamp(32px,6vw,64px)}.cover h1{margin-bottom:.2em}.cover p{max-width:520px;margin:0;opacity:.92}.cover .ph{position:absolute;inset:0}.cover:after{content:"";position:absolute;inset:0;background:rgba(36,35,31,.5)}.cover .wrap{position:relative;z-index:2}
+.cats{position:sticky;top:calc(72px + env(safe-area-inset-top,0px));background:var(--bg);z-index:5;display:flex;gap:8px;overflow-x:auto;padding:14px 24px;border-bottom:1px solid var(--sand);align-items:center}
+.chip{white-space:nowrap;border:1px solid var(--sand);background:none;color:inherit;padding:8px 18px;cursor:pointer;font:inherit;min-height:44px}.chip[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+input,textarea{width:100%;padding:12px;border:1px solid var(--gold);background:var(--card);color:var(--ink);font:inherit}
+label{display:block;margin:14px 0 4px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.grid .card{cursor:pointer;text-align:start;padding:0;color:inherit;font:inherit}.grid .ph{height:230px}
+dialog{border:0;padding:0;max-height:92vh;overflow:auto;max-width:760px;width:calc(100% - 24px);background:var(--bg);color:var(--ink);animation:pop .3s}dialog::backdrop{background:rgba(0,0,0,.6)}
+@keyframes pop{from{opacity:0;transform:scale(.96)}}
+dialog .ph{height:300px}dialog .b{padding:24px}.x{position:absolute;top:8px;inset-inline-start:8px;z-index:3;background:var(--bg);color:var(--ink);border:0;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+.lb{background:#111;color:#fff;max-width:900px}.lb .ph{height:min(70vh,640px)}
+.nav2{display:flex;justify-content:space-between;padding:10px;background:#111}.nav2 button{background:none;border:1px solid #fff;color:#fff;min-width:44px;min-height:44px;cursor:pointer}
+.msg{padding:12px;margin-top:14px;border:1px solid var(--gold)}
+footer{background:#24231F;color:#F4EFE6;padding:56px 0 24px}footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}footer a{display:block;text-decoration:none;opacity:.85}
+.float{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;gap:10px}
+.float button,.float a{width:52px;height:52px;border-radius:50%;border:0;background:var(--olive);color:#fff;font-size:1.3rem;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center}
+.float [hidden]{display:none}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.split>*{min-width:0}#fl{inset-inline-start:16px}#fr{inset-inline-end:16px}#wa{background:#25704a!important}
+#ap{position:fixed;bottom:calc(80px + env(safe-area-inset-bottom,0px));inset-inline-start:16px;z-index:60;background:var(--card);border:1px solid var(--gold);padding:14px;display:none;gap:8px;flex-direction:column}#ap.open{display:flex}#ap button{padding:8px 12px;cursor:pointer;min-height:40px}
+.rv{opacity:0;transform:translateY(20px);transition:.8s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="btn" style="position:absolute;top:-60px;z-index:99" onfocus="this.style.top='8px'" onblur="this.style.top='-60px'" id="skip">דלג לתוכן</a>
+<header id="hd"><div class="wrap nav"><a class="logo" href="#home">LA PATSIAR</a>
+<button class="burger" id="bg" aria-label="תפריט" aria-expanded="false" aria-controls="lk">☰</button>
+<nav class="links" id="lk" aria-label="ראשי"></nav><a class="btn cta" id="cta" href="#contact">בואו לבקר</a></div></header>
+<main id="main" tabindex="-1"></main>
+<footer><div class="wrap"><div><div class="logo">LA PATSIAR</div><p id="fa"></p></div><div id="fn"></div><div id="fh"></div><div><p class="demo">קישורים להשלמה: הצהרת נגישות, מדיניות פרטיות, רשתות חברתיות</p></div></div>
+<p class="wrap" style="margin-top:30px;opacity:.6;font-size:.85rem">© LA PATSIAR · אתר דמו, כל התוכן זמני</p></footer>
+<div class="float" id="fr"><a id="wa" aria-label="וואטסאפ" target="_blank" rel="noopener">✆</a><button id="up" aria-label="חזרה למעלה" hidden>↑</button></div>
+<div class="float" id="fl"><button id="ab" aria-label="הגדרות נגישות" aria-expanded="false">♿</button></div>
+<div id="ap" role="group" aria-label="הגדרות נגישות"><button data-a="plus">הגדלת טקסט</button><button data-a="minus">הקטנת טקסט</button><button data-a="hc">ניגודיות גבוהה</button><button data-a="gs">גווני אפור</button><button data-a="ul">קו תחתון לקישורים</button><button data-a="hf">הדגשת פוקוס</button><button data-a="reset">איפוס</button></div>
+<dialog id="dg"></dialog>
+<script>
+/* ===== EDITABLE CONFIG – all values are DEMO placeholders ===== */
+const CFG={phone:"050-000-0000",wa:"972500000000",address:"[כתובת הקפה – להשלמה]",
+ maps:"https://www.google.com/maps/search/?api=1&query=",formEndpoint:"" /* set to your backend URL */,
+ hours:["יום ראשון","יום שני","יום שלישי","יום רביעי","יום חמישי","יום שישי","שבת"].map(d=>[d,"[שעות להשלמה]"])};
+/* Image slots: set src to a file path/data URI to replace a placeholder. */
+const IMG={};const tones=["#7A4939","#343D32","#A58B68","#4a3a30","#5d6a55","#8a6a58","#2f2d28","#9b7f66","#6b4b3d","#46503f","#b09a7c","#3d2f27","#6f7c64","#8c5d4a"];
+const ph=(k,i=0,alt="תמונה זמנית – להחלפה")=>`<div class="ph" role="img" aria-label="${alt}" style="--a:${tones[i%14]};--b:${tones[(i+3)%14]};--x:${20+(i*17)%60}%">${IMG[k]?`<img src="${IMG[k]}" alt="${alt}" loading="lazy" style="object-position:center">`:`<span>${k}</span>`}</div>`;
+const M=[["ראשונות","קיש לורן","בצק חמאה, ביצים וקרם – תיאור דמו"],["ראשונות","סלט צרפתי","ירקות עונה וויניגרט – דמו"],["מנות עיקריות","קרוק מסייה","כריך חם בסגנון פריזאי – דמו"],["מנות עיקריות","טוסט ברי","גבינה על לחם כפרי – דמו"],["מאפים","קרואסון חמאה","שכבות פריכות – דמו"],["מאפים","פאן או שוקולד","בצק מבצבץ ושוקולד – דמו"],["קינוחים","טארט לימון","קרם חמצמץ על בצק פריך – דמו"],["קינוחים","אקלר וניל","קרם פטיסייר – דמו"],["קינוחים","מילפיי","שכבות בצק וקרם – דמו"],["שתייה חמה","קפה פילטר","קלייה בינונית – דמו"],["שתייה חמה","קפוצ׳ינו","אספרסו וחלב מוקצף – דמו"],["שתייה קרה","לימונדה ביתית","לימון ונענע – דמו"]].map((m,i)=>({id:i,cat:m[0],name:m[1],desc:m[2],price:"₪ [מחיר]",ing:"[רכיבים – להשלמה]",all:"[אלרגנים – יש להשלים ולאמת לפני פרסום]",key:"menu-"+i}));
+const CATS=[...new Set(M.map(m=>m.cat))];
+const GC=["האווירה שלנו","האוכל שלנו","הצוות","אירועים","האורחים שלנו"];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const R=[["home","ראשי"],["menu","תפריט"],["gallery","גלריה"],["about","אודות"],["contact","מיקום ויצירת קשר"]];
+const hoursRows=()=>`<table class="hours"><caption class="demo">שעות פעילות – דמו</caption>${CFG.hours.map((h,i)=>`<tr class="${i==new Date().getDay()?"today":""}"><td>${h[0]}${i==new Date().getDay()?" (היום)":""}</td><td>${h[1]}</td></tr>`).join("")}</table>`;
+const cover=(t,s,k,i)=>`<div class="cover">${ph(k,i)}<div class="wrap"><span class="label" style="color:#E6D3B3">LA PATSIAR</span><h1>${t}</h1><p>${s}</p></div></div>`;
+const card=m=>`<button class="card" data-d="${m.id}" aria-label="פרטים: ${m.name}">${ph(m.key,m.id)}<div class="b"><h3>${m.name}</h3><p>${m.desc}</p><span class="price">${m.price}</span></div></button>`;
+const cta=(h,t)=>`<a class="btn" href="${h}">${t}</a>`;
+const contact=()=>`<section class="dark"><div class="wrap split"><div><span class="label">Contact</span><h2>נשמח לראות אתכם</h2><p>יש לכם שאלה או בקשה? אנחנו כאן בשבילכם.</p><p><a class="btn" style="border-color:#F4EFE6" target="_blank" rel="noopener" href="https://wa.me/${CFG.wa}">וואטסאפ</a> <a class="btn" style="border-color:#F4EFE6" href="tel:${CFG.phone}">${CFG.phone} (דמו)</a></p></div>
+<form id="cf" novalidate><label for="n">שם מלא</label><input id="n" required autocomplete="name"><label for="p">טלפון</label><input id="p" type="tel" required autocomplete="tel"><label for="e">אימייל (לא חובה)</label><input id="e" type="email"><label for="m">הודעה</label><textarea id="m" rows="4" required></textarea>
+<input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none"><label style="display:flex;gap:8px;align-items:center"><input id="c" type="checkbox" style="width:auto"> אני מאשר/ת שימוש בפרטיי למענה לפנייה</label><br><button class="btn fill" type="submit">שליחה</button><div class="msg" id="fm" role="status" hidden></div></form></div></section>`;
+const V={
+home:()=>`<div class="hero" style="padding:0"><div id="sl">${[0,1,2,3].map(i=>`<div class="slide ${i?"":"on"}">${ph("hero-"+i,i)}</div>`).join("")}</div><div class="wrap"><span class="label" style="color:#E6D3B3">Pâtisserie &amp; Café</span><h1>ניחוח של פריז, בלב היום שלך</h1><p>מאפים מוקפדים, קפה משובח ואווירה צרפתית שמזמינה להישאר.</p><a class="btn fill" href="#menu">לצפייה בתפריט</a><a class="btn" href="#contact">איך מגיעים אלינו</a></div><div class="dots" id="dots">${[0,1,2,3].map(i=>`<button aria-label="תמונה ${i+1}" class="${i?"":"on"}" data-s="${i}"></button>`).join("")}</div></div>
+<section><div class="wrap intro rv"><span class="label">Bienvenue</span><h2>יותר מקפה. רגע קטן של פריז.</h2><span class="fr">Un petit moment de Paris</span><div class="rule"></div><p>מקום קטן לעצירה, לנשימה ולביס טוב. (טקסט דמו – יוחלף בנוסח הקפה.)</p></div></section>
+<section style="background:var(--sand)"><div class="wrap rv"><div class="ctl"><h2 style="margin:0">מנות חתימה</h2><div><button id="pv" aria-label="הקודם">›</button> <button id="nx" aria-label="הבא">‹</button></div></div><div class="car" id="car" tabindex="0" aria-label="קרוסלת מנות">${M.filter((_,i)=>[4,6,0,7,2].includes(i)).map(card).join("")}</div><p style="margin-top:24px">${cta("#menu","לתפריט המלא")}</p></div></section>
+<section><div class="wrap rv"><h2>רגעים מהקפה</h2><div class="bento" id="bt"></div><p style="margin-top:24px">${cta("#gallery","לגלריה המלאה")}</p></div></section>
+<section style="background:var(--sand)"><div class="wrap split rv"><div class="img">${ph("about-1",2)}</div><div><span class="label">Notre histoire</span><h2>הסיפור שלנו</h2><p>השראה צרפתית, אפייה בעבודת יד ואירוח חם. (טקסט דמו – אין כאן עובדות מאומתות על העסק.)</p>${cta("#about","להכיר אותנו")}</div></div></section>
+<section><div class="wrap rv"><div class="team">${ph("team-cover",4)}</div><h2>האנשים שמאחורי הטעם</h2><p style="max-width:640px">תשוקה, מקצועיות ואירוח – צוות שדואג שתרגישו בבית. (דמו)</p>${cta("#about","עוד עלינו")}</div></section>
+<section class="dark"><div class="wrap split rv"><div class="img" style="height:380px">${ph("location",5)}</div><div><h2>מיקום ושעות פתיחה</h2><p>${CFG.address}</p><p><a class="btn" style="border-color:#F4EFE6" target="_blank" rel="noopener" href="${CFG.maps}${encodeURIComponent(CFG.address)}">ניווט בגוגל מפות</a> <a class="btn" style="border-color:#F4EFE6" href="tel:${CFG.phone}">חיוג</a></p>${hoursRows()}</div></div></section>${contact()}`,
+menu:()=>`${cover("התפריט שלנו","מבחר דמו – מחירים, רכיבים ואלרגנים יש להשלים.","menu-cover",6)}<div class="cats" role="group" aria-label="קטגוריות"><input id="q" type="search" placeholder="חיפוש מנה" aria-label="חיפוש" style="max-width:200px"><button class="chip" data-c="" aria-pressed="true">הכל</button>${CATS.map(c=>`<button class="chip" data-c="${c}" aria-pressed="false">${c}</button>`).join("")}</div><section style="padding-top:40px"><div class="wrap"><h2 class="sr">רשימת מנות</h2><div class="grid" id="mg"></div><p id="ne" hidden>לא נמצאו מנות.</p></div></section>`,
+gallery:()=>`${cover("הרגעים שלנו","תמונות דמו – להחלפה בצילומי הקפה.","gal-cover",7)}<div class="cats" role="group" aria-label="קטגוריות גלריה">${GC.map((c,i)=>`<button class="chip" data-g="${i}" aria-pressed="${i==0}">${c}</button>`).join("")}</div><section style="padding-top:40px"><div class="wrap"><h2 class="sr">תמונות</h2><div class="bento" id="gg"></div></div></section>`,
+about:()=>`${cover("הסיפור שלנו","פטיסרי וקפה בהשראה צרפתית.","about-cover",8)}<section><div class="wrap split"><div><h2>על הקפה</h2><p>[תיאור הקפה, ההשראה הצרפתית, שנות הפעילות ומה שמייחד אותנו – להשלמה על ידי הבעלים. לא הוזנו עובדות היסטוריות.]</p></div><div class="img">${ph("about-2",9)}</div></div></section><section><div class="wrap"><div class="team">${ph("team-cover",4)}</div><h2>האנשים שמאחורי הטעם</h2><p>[הצגת הצוות – להשלמה, ללא שמות בדויים.]</p>${cta("#contact","בואו לבקר")}</div></section>`,
+contact:()=>`${cover("מיקום ויצירת קשר","נשמח לארח אתכם.","contact-cover",10)}<section><div class="wrap split"><div><h2>כתובת</h2><p>${CFG.address}</p><p><a class="btn" target="_blank" rel="noopener" href="${CFG.maps}${encodeURIComponent(CFG.address)}">ניווט בגוגל מפות</a></p><p class="demo">מפה מוטמעת: מוגדרת לאחר הזנת כתובת אמיתית</p></div><div>${hoursRows()}</div></div></section>${contact()}`,
+nf:()=>`<section class="page" style="text-align:center;padding-top:160px"><h1>404</h1><p>העמוד לא נמצא.</p><a class="btn fill" href="#home">חזרה לראשי</a></section>`};
+let tm=[],lbIdx=0,lbSet=[];
+function clr(){tm.forEach(clearInterval);tm=[]}
+const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function route(){clr();let r=location.hash.slice(1)||"home";const ok=R.some(x=>x[0]==r);const m=$("#main");m.className=ok&&r!="home"?"page":"";m.innerHTML=(V[ok?r:"nf"])();
+$("#lk").innerHTML=R.map(x=>`<a href="#${x[0]}" ${x[0]==r?'aria-current="page"':""}>${x[1]}</a>`).join("")+'<a class="btn fill" href="#contact" id="mc">בואו לבקר</a>';
+closeNav();window.scrollTo({top:0,behavior:"instant"});document.title=(ok?R.find(x=>x[0]==r)[1]+" | ":"404 | ")+"LA PATSIAR";hdr();
+$$(".rv").forEach(e=>io.observe(e));
+if(r=="home"&&ok){const s=$$(".slide");let i=0;const d=$$("#dots button"),go=n=>{s[i].classList.remove("on");d[i].classList.remove("on");i=n;s[i].classList.add("on");d[i].classList.add("on")};d.forEach(b=>b.onclick=()=>go(+b.dataset.s));if(!rm)tm.push(setInterval(()=>go((i+1)%s.length),6000));car();bento()}
+if(r=="menu")menu();if(r=="gallery")gal(0);
+const f=$("#cf");if(f)f.onsubmit=submit;
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("in")),{threshold:.12});
+function car(){const c=$("#car");if(!c)return;const step=()=>c.firstElementChild.offsetWidth+22;
+$("#nx").onclick=()=>c.scrollBy({left:-step(),behavior:"smooth"});$("#pv").onclick=()=>c.scrollBy({left:step(),behavior:"smooth"});
+let down=0,sx=0,sl=0,hov=0,mv=0;c.onmousedown=e=>{down=1;mv=0;sx=e.pageX;sl=c.scrollLeft;c.style.scrollSnapType="none"};
+window.onmouseup=()=>{if(down){down=0;c.style.scrollSnapType=""}};c.onmousemove=e=>{if(down){mv=Math.abs(e.pageX-sx);c.scrollLeft=sl-(e.pageX-sx)}};c.addEventListener("click",e=>{if(mv>5){e.stopPropagation();e.preventDefault();mv=0}},true);
+c.onmouseenter=()=>hov=1;c.onmouseleave=()=>hov=0;c.onfocusin=()=>hov=1;c.onfocusout=()=>hov=0;c.ontouchstart=()=>hov=1;
+if(!rm)tm.push(setInterval(()=>{if(hov)return;const mx=c.scrollWidth-c.clientWidth;Math.abs(c.scrollLeft)>=mx-4?c.scrollTo({left:0,behavior:"smooth"}):c.scrollBy({left:-step(),behavior:"smooth"})},5000))}
+function bento(){const b=$("#bt");if(!b)return;const cls=["t1","t2","","t3","","t2","","t3",""];let shown=[0,1,2,3,4,5,6,7,8];const pool=[9,10,11,12,13];
+b.innerHTML=shown.map((p,i)=>`<button class="${cls[i]}" data-g="${i}" data-k="gallery-${p}" data-i="${p}" aria-label="פתיחת תמונה ${i+1}">${ph("gallery-"+p,p)}</button>`).join("");
+if(rm)return;tm.push(setInterval(()=>{const slot=Math.floor(Math.random()*9),el=b.children[slot],nw=pool.shift();pool.push(shown[slot]);
+el.classList.add("fade");setTimeout(()=>{shown[slot]=nw;el.innerHTML=ph("gallery-"+nw,nw);el.dataset.k="gallery-"+nw;el.dataset.i=nw;el.classList.remove("fade")},650)},4500))}
+function menu(){let cat="",q="";const g=$("#mg"),draw=()=>{const l=M.filter(m=>(!cat||m.cat==cat)&&(m.name+m.desc).includes(q));g.innerHTML=l.map(card).join("");$("#ne").hidden=!!l.length};draw();
+$$("[data-c]").forEach(b=>b.onclick=()=>{cat=b.dataset.c;$$("[data-c]").forEach(x=>x.setAttribute("aria-pressed",x==b));draw()});$("#q").oninput=e=>{q=e.target.value.trim();draw()}}
+function gal(i){lbSet=Array.from({length:9},(_,k)=>["gal-"+(i*9+k),i*9+k]);const g=$("#gg"),cls=["t1","t2","","t3","","t2","","t3",""];g.innerHTML=lbSet.map((p,k)=>`<button class="${cls[k]}" data-l="${k}" aria-label="${GC[i]} – הגדלה">${ph(p[0],p[1],GC[i]+" – תמונה זמנית")}</button>`).join("");
+$$("[data-g]").forEach(b=>b.onclick=()=>{$$("[data-g]").forEach(x=>x.setAttribute("aria-pressed",x==b));gal(+b.dataset.g)})}
+function lb(k){const d=$("#dg");lbIdx=(k+lbSet.length)%lbSet.length;d.className="lb";d.innerHTML=`<button class="x" data-x aria-label="סגירה">✕</button>${ph(lbSet[lbIdx][0],lbSet[lbIdx][1],"תמונה זמנית")}<div class="nav2"><button data-p aria-label="הקודמת">›</button><span>${lbIdx+1}/${lbSet.length}</span><button data-n aria-label="הבאה">‹</button></div>`;if(!d.open)d.showModal()}
+let trig=null;
+document.addEventListener("click",e=>{const t=e.target.closest("button,a");if(!t)return;
+if(t.dataset.d!==undefined){trig=t;const m=M[t.dataset.d],d=$("#dg");d.className="";d.innerHTML=`<button class="x" data-x aria-label="סגירה">✕</button>${ph(m.key,m.id)}<div class="b"><span class="demo">תוכן דמו</span><h2>${m.name}</h2><p>${m.desc}</p><p class="price">${m.price}</p><p><b>רכיבים:</b> ${m.ing}</p><p><b>אלרגנים:</b> ${m.all}</p></div>`;d.showModal();document.body.style.overflow="hidden"}
+else if(t.dataset.l!==undefined){trig=t;lb(+t.dataset.l);document.body.style.overflow="hidden"}
+else if(t.parentElement&&t.parentElement.id=="bt"){trig=t;lbSet=$$("#bt button").map(b=>[b.dataset.k,+b.dataset.i]);lb(+t.dataset.g);document.body.style.overflow="hidden"}
+else if(t.dataset.x!==undefined)$("#dg").close();else if(t.dataset.p!==undefined)lb(lbIdx-1);else if(t.dataset.n!==undefined)lb(lbIdx+1)});
+$("#dg").addEventListener("click",e=>{if(e.target.id=="dg")e.target.close()});
+$("#dg").addEventListener("close",()=>{document.body.style.overflow="";trig&&trig.focus()});
+$("#dg").addEventListener("keydown",e=>{if($("#dg").className=="lb"){if(e.key=="ArrowRight")lb(lbIdx-1);if(e.key=="ArrowLeft")lb(lbIdx+1)}});
+let sx0=0;$("#dg").addEventListener("touchstart",e=>sx0=e.touches[0].clientX);$("#dg").addEventListener("touchend",e=>{if($("#dg").className!="lb")return;const d=e.changedTouches[0].clientX-sx0;if(Math.abs(d)>50)lb(lbIdx+(d>0?-1:1))});
+function submit(e){e.preventDefault();const g=i=>$("#"+i).value.trim(),fm=$("#fm");fm.hidden=false;
+if($("#hp").value)return;if(!g("n")||!/^[0-9+\-\s]{7,}$/.test(g("p"))||!g("m")||(g("e")&&!/^\S+@\S+\.\S+$/.test(g("e")))||!$("#c").checked){fm.textContent="נא למלא שם, טלפון תקין והודעה, ולאשר את ההסכמה.";return}
+if(!CFG.formEndpoint){fm.textContent="הטופס טרם חובר לשרת, ולכן ההודעה לא נשלחה. אפשר לפנות בוואטסאפ או בטלפון.";return}
+fm.textContent="שולח...";fetch(CFG.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:g("n"),phone:g("p"),email:g("e"),message:g("m")})}).then(r=>{if(!r.ok)throw 0;fm.textContent="ההודעה נשלחה, תודה!";e.target.reset()}).catch(()=>fm.textContent="אירעה שגיאה בשליחה. נסו שוב או פנו בוואטסאפ.")}
+/* nav, scroll, a11y */
+function closeNav(){$("#lk").classList.remove("open");$("#bg").setAttribute("aria-expanded","false");document.body.style.overflow=""}
+$("#bg").onclick=()=>{const o=$("#lk").classList.toggle("open");$("#bg").setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":""};
+$("#lk").addEventListener("click",e=>{if(e.target.tagName=="A")closeNav()});
+document.addEventListener("keydown",e=>{if(e.key=="Escape"){closeNav();$("#ap").classList.remove("open");$("#ab").setAttribute("aria-expanded","false")}});
+function hdr(){const solid=scrollY>40||(location.hash.slice(1)||"home")!="home";$("#hd").classList.toggle("solid",solid);$("#up").hidden=scrollY<500}
+addEventListener("scroll",hdr,{passive:true});addEventListener("hashchange",()=>{route();$("#main").focus({preventScroll:true})});$("#skip").onclick=e=>{e.preventDefault();$("#main").focus()};$("#up").onclick=()=>scrollTo({top:0,behavior:rm?"auto":"smooth"});
+$("#wa").href="https://wa.me/"+CFG.wa+"?text="+encodeURIComponent("שלום, אשמח לשמוע פרטים");
+$("#fa").textContent=CFG.address+" · "+CFG.phone;$("#fn").innerHTML=R.map(x=>`<a href="#${x[0]}">${x[1]}</a>`).join("");$("#fh").innerHTML=hoursRows().replace('class="hours"','class="hours" style="color:#F4EFE6"');
+$("#ab").onclick=()=>{const o=$("#ap").classList.toggle("open");$("#ab").setAttribute("aria-expanded",o)};
+let fs=100;$$("#ap button").forEach(b=>b.onclick=()=>{const a=b.dataset.a;if(a=="plus")fs=Math.min(140,fs+10);if(a=="minus")fs=Math.max(80,fs-10);
+if(a=="reset"){fs=100;["hc","gs","ul","hf"].forEach(c=>document.body.classList.remove(c))}else if(["hc","gs","ul","hf"].includes(a))document.body.classList.toggle(a);
+document.documentElement.style.setProperty("--fs",fs+"%");if(["hc","gs","ul","hf"].includes(a))b.setAttribute("aria-pressed",document.body.classList.contains(a));if(a=="reset")$$("#ap [aria-pressed]").forEach(x=>x.setAttribute("aria-pressed","false"))});
+route();
+</script>
+</body>
+</html>
